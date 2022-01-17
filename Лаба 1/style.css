@@ -1,0 +1,25 @@
+.image {
+    background-image: url('background.jpg');
+    position: relative;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    width: 1900px;
+    height: 900px;
+    overflow: hidden;
+}
+.text {
+    text-align: center;
+    background-color: white;
+    margin-top: 15%;
+    margin-left: 35%;
+    margin-right: 35%;
+    border: 2px solid rgba(112, 112, 112, 0.671);
+}
+
+#num {
+    border-color: rgba(206, 206, 206, 0.801);
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 12px;
+}

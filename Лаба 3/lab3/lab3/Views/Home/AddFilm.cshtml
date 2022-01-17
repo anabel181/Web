@@ -1,0 +1,61 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Добавление фильма</title>
+</head>
+<body>
+    <div>
+        <h3>Добавление нового фильма</h3>
+        <form method="post" action="">
+            <input type="hidden" value="@ViewBag.FilmId" name="FilmId" />
+            <table class="table_dark">
+                <tr>
+                    <td><p>Название: </p></td>
+                    <td><input type="text" name="Name" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Режиссер: </p></td>
+                    <td>
+                        <input type="text" name="Producer" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Жанр: </p></td>
+                    <td>
+                        <input type="text" name="Genre" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Год производства: </p></td>
+                    <td>
+                        <input type="text" name="Year" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Описание: </p></td>
+                    <td><input type="text" name="Description" /> </td>
+                </tr>
+                <tr>
+                    <td><p>Рейтинг: </p></td>
+                    <td>
+                        <input type="text" name="Rating" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Изображение: </p></td>
+                    <td>
+                        <input type="text" name="Picture" />
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Отправить" />
+        </form>
+    </div>
+</body>
+</html>
